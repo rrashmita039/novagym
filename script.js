@@ -523,7 +523,17 @@ sections.forEach(s => sectionObserver.observe(s));
     btn.querySelector('.cform-btn-text').textContent = 'Sending...';
 
     try {
-      const { csrfToken } = await fetch('/api/csrf-token').then(r => r.json());
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+      let csrfToken;
+      try {
+        const csrfRes = await fetch('/api/csrf-token', { signal: controller.signal });
+        ({ csrfToken } = await csrfRes.json());
+      } catch {
+        clearTimeout(timeout);
+        throw new Error('Server is waking up, please try again in 30 seconds.');
+      }
+      clearTimeout(timeout);
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-csrf-token': csrfToken },
@@ -543,7 +553,7 @@ sections.forEach(s => sectionObserver.observe(s));
       success.classList.add('show');
       setTimeout(() => success.classList.remove('show'), 5000);
     } catch (err) {
-      document.getElementById('errMsg').textContent = err.message;
+      document.getElementById('errMsg').textContent = err.message || 'Something went wrong. Please try again.';
     } finally {
       btn.disabled = false;
       btn.querySelector('.cform-btn-text').textContent = 'Send Message';
