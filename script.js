@@ -487,11 +487,13 @@ sections.forEach(s => sectionObserver.observe(s));
 
   Object.values(fields).forEach(({ el, err, validate }) => {
     if (!el || !err) return;
+    el.classList.remove('error', 'valid');
     el.addEventListener('blur', () => {
+      if (!el.value.trim()) { err.textContent = ''; el.classList.remove('error','valid'); return; }
       const msg = validate(el.value);
       err.textContent = msg;
       el.classList.toggle('error', !!msg);
-      el.classList.toggle('valid', !msg && el.value.trim() !== '');
+      el.classList.toggle('valid', !msg);
     });
     el.addEventListener('input', () => {
       if (el.classList.contains('error')) {
