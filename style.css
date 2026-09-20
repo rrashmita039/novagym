@@ -1223,9 +1223,13 @@ h2 {
   gap: 40px;
   align-items: start;
 }
+.contact-left { position: relative; z-index: 1; }
+.contact-form-wrap { position: relative; z-index: 2; }
 
-/* Info cards */
-.contact-info-grid {
+.contact-left {
+  position: relative;
+  z-index: 1;
+}
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
