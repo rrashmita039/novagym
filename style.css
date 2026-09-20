@@ -1254,8 +1254,9 @@ h2 {
   color: var(--red);
 }
 .cinfo-icon svg { width: 16px; height: 16px; }
+.cinfo-card > div { display: flex; flex-direction: column; gap: 4px; }
 .cinfo-card strong { display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 4px; letter-spacing: 0.5px; }
-.cinfo-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+.cinfo-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.6; margin: 0; }
 
 /* Map */
 .contact-map {
