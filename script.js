@@ -481,7 +481,7 @@ sections.forEach(s => sectionObserver.observe(s));
   const fields = {
     cfName:    { el: document.getElementById('cfName'),    err: document.getElementById('errName'),    validate: v => v.trim().length >= 2 ? '' : 'Please enter your full name.' },
     cfEmail:   { el: document.getElementById('cfEmail'),   err: document.getElementById('errEmail'),   validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? '' : 'Please enter a valid email address.' },
-    cfService: { el: document.getElementById('cfService'), err: document.getElementById('errService'), validate: v => v ? '' : 'Please select a service.' },
+    cfService: { el: document.getElementById('cfService'), err: document.getElementById('errService'), validate: v => true ? '' : '' },
     cfMsg:     { el: document.getElementById('cfMsg'),     err: document.getElementById('errMsg'),     validate: v => v.trim().length >= 10 ? '' : 'Message must be at least 10 characters.' }
   };
 
