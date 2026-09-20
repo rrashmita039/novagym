@@ -1223,8 +1223,6 @@ h2 {
   gap: 40px;
   align-items: start;
 }
-.contact-left { position: relative; z-index: 1; }
-.contact-form-wrap { position: relative; z-index: 2; }
 
 .contact-left {
   position: relative;
