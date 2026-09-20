@@ -1292,6 +1292,9 @@ h2 {
   transform: none !important;
   pointer-events: auto !important;
 }
+.contact-form-wrap * {
+  pointer-events: auto !important;
+}
 .form-title {
   font-family: var(--font-display);
   font-size: 2rem;
