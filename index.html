@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVAGYM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">NOVA<span>GYM</span></div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <p class="loader-text" id="loaderText">Loading...</p>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#home" class="logo">NOVA<span>GYM</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-explore-btn" id="navExploreBtn" aria-label="Explore tools">
+        <span></span><span></span><span></span>
+        <span class="nav-explore-label">More</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-nav-join">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#pricing" class="mobile-link">Pricing</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="btn btn-primary mobile-join">Join Now</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <!-- Background -->
+    <div class="hero-bg"></div>
+    <!-- Parallax layer -->
+    <div class="hero-parallax" id="heroParallax"></div>
+
+    <!-- Dark Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Red glow accent -->
+    <div class="hero-glow"></div>
+
+    <!-- Content -->
+    <div class="hero-content">
+
+      <!-- Badge -->
+      <div class="hero-badge hero-fade" style="--fd:0.2s">
+        <span class="hero-badge-dot"></span>
+        Premium Fitness Experience
+      </div>
+
+      <!-- Animated subline -->
+      <p class="hero-sub hero-fade" style="--fd:0.5s">Welcome to NovaGym</p>
+
+      <!-- Main heading -->
+      <h1 class="hero-fade" style="--fd:0.75s">
+        TRANSFORM<br />
+        YOUR <span class="hero-word-wrap"><span class="hero-word" id="heroWord">BODY</span><span class="hero-cursor">|</span></span>
+      </h1>
+
+      <!-- Subheading -->
+      <p class="hero-desc hero-fade" style="--fd:1s">
+        Push beyond your limits. Build strength, endurance, and confidence<br class="hero-br" />
+        with world-class trainers and state-of-the-art facilities.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-btns hero-fade" style="--fd:1.25s">
+        <a href="#programs" class="btn btn-primary btn-hero">Start Training</a>
+        <a href="#pricing" class="btn btn-hero-membership">
+          <span class="btn-membership-icon">👑</span> View Membership
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats hero-fade" style="--fd:1.5s">
+        <div class="stat"><span class="stat-num">12+</span><span>Years</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5K+</span><span>Members</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">30+</span><span>Trainers</span></div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img animate-left">
+          <div class="img-placeholder">
+            <div class="img-icon">💪</div>
+          </div>
+          <div class="badge glass">Est. 2012</div>
+        </div>
+        <div class="about-text animate-right">
+          <p class="section-label">About Us</p>
+          <h2>More Than Just A <span class="red">Gym</span></h2>
+          <p>NovaGym is a premium fitness facility built for those who refuse to settle. Our state-of-the-art equipment, expert coaches, and relentless community push you beyond your limits every single day.</p>
+          <ul class="about-list">
+            <li><span class="check">✔</span> 24/7 Access to all facilities</li>
+            <li><span class="check">✔</span> Certified personal trainers</li>
+            <li><span class="check">✔</span> Nutrition & recovery programs</li>
+            <li><span class="check">✔</span> Group & solo training options</li>
+          </ul>
+          <a href="#programs" class="btn btn-primary">Our Programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMI CALCULATOR -->
+  <section id="bmi" class="bmi section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Health Tool</p>
+        <h2>BMI <span class="red">Calculator</span></h2>
+        <p class="section-desc">Find out your Body Mass Index and get personalized fitness advice.</p>
+      </div>
+      <div class="bmi-grid">
+
+        <!-- Inputs -->
+        <div class="bmi-form glass animate-left">
+          <div class="bmi-unit-toggle">
+            <button class="unit-btn active" data-unit="metric">Metric</button>
+            <button class="unit-btn" data-unit="imperial">Imperial</button>
+          </div>
+
+          <div class="bmi-field">
+            <label>Height</label>
+            <div class="bmi-input-wrap" id="heightWrap">
+              <input type="number" id="heightCm" placeholder="e.g. 175" min="50" max="250" />
+              <span class="bmi-unit-label">cm</span>
+            </div>
+            <div class="bmi-input-row hidden" id="heightImperial">
+              <div class="bmi-input-wrap">
+                <input type="number" id="heightFt" placeholder="5" min="1" max="8" />
+                <span class="bmi-unit-label">ft</span>
+              </div>
+              <div class="bmi-input-wrap">
+                <input type="number" id="heightIn" placeholder="10" min="0" max="11" />
+                <span class="bmi-unit-label">in</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bmi-field">
+            <label>Weight</label>
+            <div class="bmi-input-wrap">
+              <input type="number" id="weightVal" placeholder="e.g. 70" min="10" max="300" />
+              <span class="bmi-unit-label" id="weightUnit">kg</span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary full-width bmi-calc-btn" id="calcBmi">Calculate BMI</button>
+          <p class="bmi-error" id="bmiError"></p>
+        </div>
+
+        <!-- Result -->
+        <div class="bmi-result-wrap animate-right">
+          <!-- Idle state -->
+          <div class="bmi-idle glass" id="bmiIdle">
+            <div class="bmi-idle-icon">⚖️</div>
+            <p>Enter your height and weight<br />to calculate your BMI</p>
+          </div>
+
+          <!-- Result card -->
+          <div class="bmi-result glass" id="bmiResult">
+            <p class="bmi-result-label">Your BMI</p>
+            <div class="bmi-score-wrap">
+              <span class="bmi-score" id="bmiScore">--</span>
+            </div>
+
+            <!-- Gauge -->
+            <div class="bmi-gauge">
+              <div class="bmi-gauge-track">
+                <div class="bmi-gauge-fill" id="bmiGaugeFill"></div>
+                <div class="bmi-gauge-marker" id="bmiGaugeMarker"></div>
+              </div>
+              <div class="bmi-gauge-labels">
+                <span>Under</span><span>Normal</span><span>Over</span><span>Obese</span>
+              </div>
+            </div>
+
+            <div class="bmi-category-badge" id="bmiCategoryBadge">
+              <span class="bmi-category-dot" id="bmiCategoryDot"></span>
+              <span id="bmiCategory">--</span>
+            </div>
+
+            <div class="bmi-advice glass" id="bmiAdvice">
+              <span class="bmi-advice-icon" id="bmiAdviceIcon">💡</span>
+              <p id="bmiAdviceText">--</p>
+            </div>
+
+            <!-- Range cards -->
+            <div class="bmi-ranges">
+              <div class="bmi-range-card" data-cat="underweight"><span>Under 18.5</span><strong>Underweight</strong></div>
+              <div class="bmi-range-card" data-cat="normal"><span>18.5 – 24.9</span><strong>Normal</strong></div>
+              <div class="bmi-range-card" data-cat="overweight"><span>25 – 29.9</span><strong>Overweight</strong></div>
+              <div class="bmi-range-card" data-cat="obese"><span>30+</span><strong>Obese</strong></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Our Facility</p>
+        <h2>Inside <span class="red">NovaGym</span></h2>
+        <p class="section-desc">State-of-the-art equipment, premium spaces, and an atmosphere built for champions.</p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="gallery-filters animate-up">
+        <button class="gf-btn active" data-filter="all">All</button>
+        <button class="gf-btn" data-filter="gym">Gym Floor</button>
+        <button class="gf-btn" data-filter="class">Classes</button>
+        <button class="gf-btn" data-filter="wellness">Wellness</button>
+      </div>
+
+      <!-- Masonry grid -->
+      <div class="masonry-grid animate-up" id="masonryGrid">
+
+        <div class="masonry-item tall" data-filter="gym" data-index="0">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#1a0a0a 0%,#3d0000 40%,#1a0505 100%)">
+            <div class="masonry-placeholder"><span>🏋️</span><p>Weight Room</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Weight Room</h4>
+              <p>Gym Floor</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-filter="class" data-index="1">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#0a0a1a 0%,#1a0000 50%,#2d0a0a 100%)">
+            <div class="masonry-placeholder"><span>🥊</span><p>Boxing Class</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Boxing Class</h4>
+              <p>Classes</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-filter="wellness" data-index="2">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#0a1a0a 0%,#1a0505 50%,#0d0d0d 100%)">
+            <div class="masonry-placeholder"><span>🧘</span><p>Yoga Studio</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Yoga Studio</h4>
+              <p>Wellness</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item wide" data-filter="gym" data-index="3">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#1a0505 0%,#3a0000 60%,#0a0a0a 100%)">
+            <div class="masonry-placeholder"><span>🚴</span><p>Cardio Zone</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Cardio Zone</h4>
+              <p>Gym Floor</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item tall" data-filter="class" data-index="4">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#1a0a00 0%,#2d0000 50%,#0a0505 100%)">
+            <div class="masonry-placeholder"><span>🔥</span><p>HIIT Training</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>HIIT Training</h4>
+              <p>Classes</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-filter="wellness" data-index="5">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#0a0a0a 0%,#1f0000 50%,#0d0505 100%)">
+            <div class="masonry-placeholder"><span>♨️</span><p>Sauna & Spa</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Sauna &amp; Spa</h4>
+              <p>Wellness</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-filter="gym" data-index="6">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#1a0000 0%,#0a0a0a 50%,#2a0505 100%)">
+            <div class="masonry-placeholder"><span>💪</span><p>Free Weights</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Free Weights</h4>
+              <p>Gym Floor</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item wide" data-filter="class" data-index="7">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#0d0000 0%,#2a0a0a 60%,#1a0000 100%)">
+            <div class="masonry-placeholder"><span>🏊</span><p>Swimming Pool</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Swimming Pool</h4>
+              <p>Classes</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-filter="wellness" data-index="8">
+          <div class="masonry-img" style="background:linear-gradient(135deg,#0a0505 0%,#1a0000 50%,#0d0a0a 100%)">
+            <div class="masonry-placeholder"><span>🍎</span><p>Nutrition Bar</p></div>
+          </div>
+          <div class="masonry-overlay">
+            <div class="masonry-overlay-content">
+              <h4>Nutrition Bar</h4>
+              <p>Wellness</p>
+            </div>
+            <div class="masonry-zoom">&#x26F6;</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8592;</button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&#8594;</button>
+      <div class="lightbox-content" id="lightboxContent">
+        <div class="lightbox-img" id="lightboxImg"></div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">What Members Say</p>
+        <h2>Real <span class="red">Results</span>, Real People</h2>
+        <p class="section-desc">Thousands of members have transformed their lives at NovaGym.</p>
+      </div>
+
+      <div class="testi-wrapper animate-up">
+
+        <!-- Track -->
+        <div class="testi-track" id="testiTrack">
+
+          <div class="testi-card glass">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">NovaGym completely changed my life. In just 6 months I lost 18kg, built real muscle, and gained confidence I never thought I'd have. The trainers here are world-class.</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background: linear-gradient(135deg,#e63030,#7b0000);">JM</div>
+              <div class="testi-info">
+                <strong>James Mitchell</strong>
+                <span>Lost 18kg &bull; Member since 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card glass">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">I've been to many gyms but NovaGym is on another level. The equipment, the classes, the nutrition coaching — everything is premium. Best investment I've ever made in myself.</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background: linear-gradient(135deg,#c0392b,#922b21);">SR</div>
+              <div class="testi-info">
+                <strong>Sarah Reynolds</strong>
+                <span>CrossFit Champion &bull; Member since 2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card glass">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">My personal trainer at NovaGym built a plan specifically for me. Within 3 months I hit a deadlift PR I thought was impossible. The community here pushes you every single day.</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background: linear-gradient(135deg,#a93226,#641e16);">DK</div>
+              <div class="testi-info">
+                <strong>Daniel Kim</strong>
+                <span>Strength athlete &bull; Member since 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card glass">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">As a busy mum of two I was skeptical, but NovaGym's flexible schedule and supportive trainers made it easy to stay consistent. I'm the fittest I've ever been at 38.</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background: linear-gradient(135deg,#e74c3c,#a93226);">LP</div>
+              <div class="testi-info">
+                <strong>Laura Patel</strong>
+                <span>Lost 12kg &bull; Member since 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card glass">
+            <div class="testi-quote">&ldquo;</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-text">The nutrition coaching alone was worth the Elite membership. Combined with the PT sessions I've completely transformed my body composition. NovaGym delivers on every promise.</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background: linear-gradient(135deg,#cb4335,#78281f);">MC</div>
+              <div class="testi-info">
+                <strong>Marcus Cole</strong>
+                <span>Elite member &bull; Since 2020</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous">&#8592;</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next">&#8594;</button>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="testi-progress"><div class="testi-progress-bar" id="testiProgressBar"></div></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Membership Plans</p>
+        <h2>Choose Your <span class="red">Plan</span></h2>
+        <p class="section-desc">No hidden fees. Cancel anytime. Start your transformation today.</p>
+      </div>
+
+      <!-- Toggle -->
+      <div class="pricing-toggle animate-up">
+        <span class="toggle-label" id="toggleMonthly">Monthly</span>
+        <button class="toggle-switch" id="billingToggle" aria-label="Toggle billing">
+          <span class="toggle-thumb"></span>
+        </button>
+        <span class="toggle-label" id="toggleAnnual">Annual <span class="save-badge">Save 20%</span></span>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- BASIC -->
+        <div class="price-card glass animate-up delay-1">
+          <div class="plan-icon">🏃</div>
+          <p class="plan-name">Basic</p>
+          <p class="plan-tagline">Perfect to get started</p>
+          <div class="price-wrap">
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="price-num" data-monthly="29" data-annual="23">29</span>
+              <span class="period">/mo</span>
+            </div>
+            <p class="price-annual-note" id="basicNote"></p>
+          </div>
+          <ul class="plan-features">
+            <li class="feat-yes"><span class="feat-icon">✓</span> Gym Access (6am–10pm)</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Locker Room</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> 2 Group Classes/week</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Fitness Assessment</li>
+            <li class="feat-no"><span class="feat-icon">✕</span> Personal Trainer</li>
+            <li class="feat-no"><span class="feat-icon">✕</span> Nutrition Plan</li>
+            <li class="feat-no"><span class="feat-icon">✕</span> Sauna & Spa Access</li>
+          </ul>
+          <button class="btn btn-outline full-width mem-trigger" data-plan="Basic" data-icon="🏃" data-price="$29/mo">Get Started</button>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="price-card glass featured animate-up delay-2">
+          <div class="popular-badge">⭐ Most Popular</div>
+          <div class="plan-icon">🏋️</div>
+          <p class="plan-name">Premium</p>
+          <p class="plan-tagline">Best for serious athletes</p>
+          <div class="price-wrap">
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="price-num" data-monthly="59" data-annual="47">59</span>
+              <span class="period">/mo</span>
+            </div>
+            <p class="price-annual-note" id="premiumNote"></p>
+          </div>
+          <ul class="plan-features">
+            <li class="feat-yes"><span class="feat-icon">✓</span> 24/7 Gym Access</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Locker Room</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Unlimited Group Classes</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> 4 PT Sessions/month</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Fitness Assessment</li>
+            <li class="feat-no"><span class="feat-icon">✕</span> Nutrition Plan</li>
+            <li class="feat-no"><span class="feat-icon">✕</span> Sauna & Spa Access</li>
+          </ul>
+          <button class="btn btn-primary full-width mem-trigger" data-plan="Premium" data-icon="🏋️" data-price="$59/mo">Get Started</button>
+        </div>
+
+        <!-- ELITE -->
+        <div class="price-card glass animate-up delay-3">
+          <div class="plan-icon">👑</div>
+          <p class="plan-name">Elite</p>
+          <p class="plan-tagline">The ultimate experience</p>
+          <div class="price-wrap">
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="price-num" data-monthly="99" data-annual="79">99</span>
+              <span class="period">/mo</span>
+            </div>
+            <p class="price-annual-note" id="eliteNote"></p>
+          </div>
+          <ul class="plan-features">
+            <li class="feat-yes"><span class="feat-icon">✓</span> 24/7 Gym Access</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Locker Room + Sauna</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Unlimited Group Classes</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Unlimited PT Sessions</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Custom Nutrition Plan</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Sauna & Spa Access</li>
+            <li class="feat-yes"><span class="feat-icon">✓</span> Priority Booking</li>
+          </ul>
+          <button class="btn btn-outline full-width mem-trigger" data-plan="Elite" data-icon="👑" data-price="$99/mo">Get Started</button>
+        </div>
+
+      </div>
+
+      <!-- Guarantee -->
+      <div class="pricing-guarantee animate-up">
+        <span>🔒</span>
+        <p>30-day money-back guarantee &nbsp;·&nbsp; No contracts &nbsp;·&nbsp; Cancel anytime</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Get In Touch</p>
+        <h2>Contact <span class="red">NovaGym</span></h2>
+        <p class="section-desc">We'd love to hear from you. Reach out and start your journey today.</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <!-- LEFT: info + map -->
+        <div class="contact-left animate-left">
+          <div class="contact-info-grid">
+            <div class="cinfo-card glass">
+              <div class="cinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><strong>Address</strong><p>123 Nova Street, Fitness City<br/>FC 10001, United States</p></div>
+            </div>
+            <div class="cinfo-card glass">
+              <div class="cinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16.92z"/></svg></div>
+              <div><strong>Phone</strong><p>+1 (555) 123-4567<br/>+1 (555) 987-6543</p></div>
+            </div>
+            <div class="cinfo-card glass">
+              <div class="cinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><strong>Email</strong><p>hello@novagym.com<br/>support@novagym.com</p></div>
+            </div>
+            <div class="cinfo-card glass">
+              <div class="cinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div><strong>Working Hours</strong><p>Mon &ndash; Fri: 5am &ndash; 11pm<br/>Sat &ndash; Sun: 6am &ndash; 10pm</p></div>
+            </div>
+          </div>
+
+          <div class="contact-map glass">
+            <div class="map-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>123 Nova Street, Fitness City</span>
+            </div>
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573291865!2d-73.98784368459418!3d40.75797497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                width="100%" height="100%" style="border:0;filter:invert(90%) hue-rotate(180deg) saturate(0.4) brightness(0.85);"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="NovaGym Location">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: form -->
+        <div class="contact-form-wrap glass">
+          <h3 class="form-title">Send Us a <span class="red">Message</span></h3>
+          <p class="form-subtitle">Fill in the form and we'll get back to you within 24 hours.</p>
+
+          <form id="contactForm" class="cform" novalidate>
+            <div class="cform-row">
+              <div class="cform-field">
+                <label for="cfName" class="cform-label-top">Full Name</label>
+                <input type="text" id="cfName" class="cform-input" placeholder="Your full name" />
+                <span class="cform-err" id="errName"></span>
+              </div>
+              <div class="cform-field">
+                <label for="cfEmail" class="cform-label-top">Email Address</label>
+                <input type="email" id="cfEmail" class="cform-input" placeholder="your@email.com" />
+                <span class="cform-err" id="errEmail"></span>
+              </div>
+            </div>
+            <div class="cform-row">
+              <div class="cform-field">
+                <label for="cfPhone" class="cform-label-top">Phone (optional)</label>
+                <input type="tel" id="cfPhone" class="cform-input" placeholder="+1 234 567 8900" />
+              </div>
+              <div class="cform-field">
+                <label for="cfService" class="cform-label-top">Interested In</label>
+                <select id="cfService" class="cform-input cform-select">
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Strength Training</option>
+                  <option>Cardio</option>
+                  <option>Weight Loss</option>
+                  <option>CrossFit</option>
+                  <option>Nutrition Coaching</option>
+                  <option>Personal Trainer</option>
+                </select>
+                <span class="cform-err" id="errService"></span>
+              </div>
+            </div>
+            <div class="cform-field">
+              <label for="cfMsg" class="cform-label-top">Your Message</label>
+              <textarea id="cfMsg" class="cform-input cform-textarea" placeholder="Write your message here..." rows="4"></textarea>
+              <span class="cform-err" id="errMsg"></span>
+            </div>
+            <button type="submit" class="btn btn-primary full-width cform-submit" id="cfSubmit">
+              <span class="cform-btn-text">Send Message</span>
+              <span class="cform-btn-icon">&#10148;</span>
+            </button>
+            <div class="cform-success" id="cfSuccess">
+              <span>&#10004;</span> Message sent! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP MODAL -->
+  <div class="mem-modal" id="memModal" role="dialog" aria-modal="true">
+    <div class="mem-backdrop" id="memBackdrop"></div>
+    <div class="mem-box">
+      <button class="mem-close" id="memClose" aria-label="Close">&times;</button>
+
+      <!-- Form view -->
+      <div id="memFormView">
+        <div class="mem-header">
+          <p class="section-label">Join NovaGym</p>
+          <h3>Start Your <span class="red">Membership</span></h3>
+          <p class="mem-subtitle">Fill in your details and we'll confirm your plan within 24 hours.</p>
+        </div>
+
+        <div class="mem-plan-badge" id="memPlanBadge">
+          <span class="mem-plan-icon" id="memPlanIcon">🏋️</span>
+          <span id="memPlanName">Premium Plan</span>
+          <span class="mem-plan-price" id="memPlanPrice">$59/mo</span>
+        </div>
+
+        <form id="memForm" class="mem-form" novalidate>
+          <div class="mem-row">
+            <div class="mem-field">
+              <input type="text" id="memName" class="mem-input" placeholder=" " autocomplete="name" />
+              <label for="memName" class="mem-label">Full Name</label>
+              <span class="mem-err" id="memErrName"></span>
+            </div>
+            <div class="mem-field">
+              <input type="email" id="memEmail" class="mem-input" placeholder=" " autocomplete="email" />
+              <label for="memEmail" class="mem-label">Email Address</label>
+              <div class="mem-email-hint" id="memEmailHint"></div>
+              <span class="mem-err" id="memErrEmail"></span>
+            </div>
+          </div>
+          <div class="mem-row">
+            <div class="mem-field">
+              <div class="mem-phone-wrap">
+                <select class="mem-phone-code" id="memPhoneCode">
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+971">🇦🇪 +971</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+33">🇫🇷 +33</option>
+                </select>
+                <input type="tel" id="memPhone" class="mem-input mem-phone-input" placeholder="Phone number" autocomplete="tel" />
+              </div>
+              <span class="mem-hint">Numbers only · min 7 digits</span>
+              <span class="mem-err" id="memErrPhone"></span>
+            </div>
+            <div class="mem-field">
+              <select id="memBilling" class="mem-input mem-select">
+                <option value="" disabled selected></option>
+                <option value="monthly">Monthly Billing</option>
+                <option value="annual">Annual Billing (Save 20%)</option>
+              </select>
+              <label for="memBilling" class="mem-label">Billing Cycle</label>
+              <span class="mem-err" id="memErrBilling"></span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary full-width mem-submit" id="memSubmit">
+            <span id="memSubmitText">Confirm Membership</span>
+            <span>&#10148;</span>
+          </button>
+          <p class="mem-note">🔒 Your information is secure. No payment required now.</p>
+        </form>
+      </div>
+
+      <!-- Success view -->
+      <div class="mem-success" id="memSuccess">
+        <div class="mem-success-icon">🎉</div>
+        <h3>Welcome to <span class="red">NovaGym!</span></h3>
+        <p>A confirmation email has been sent to <strong id="memSuccessEmail"></strong>.<br/>Our team will be in touch within 24 hours.</p>
+        <div class="mem-success-detail" id="memSuccessDetail"></div>
+        <button class="btn btn-outline" id="memSuccessClose">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPLORE DRAWER -->
+  <div class="explore-drawer" id="exploreDrawer">
+    <div class="explore-backdrop" id="exploreBackdrop"></div>
+    <div class="explore-panel">
+      <div class="explore-panel-header">
+        <p class="explore-panel-title">NOVA<span>GYM</span> Tools</p>
+        <button class="explore-close" id="exploreClose">✕</button>
+      </div>
+      <div class="explore-links">
+        <a href="planner.html" class="explore-link">
+          <span class="explore-link-icon">📅</span>
+          <div><strong>Workout Planner</strong><span>7-day personalised schedule</span></div>
+          <span class="explore-arrow">→</span>
+        </a>
+        <a href="diet.html" class="explore-link">
+          <span class="explore-link-icon">🥗</span>
+          <div><strong>Diet Planner</strong><span>Calories & meal plan generator</span></div>
+          <span class="explore-arrow">→</span>
+        </a>
+        <a href="exercises.html" class="explore-link">
+          <span class="explore-link-icon">💪</span>
+          <div><strong>Exercise Library</strong><span>18 exercises with demos</span></div>
+          <span class="explore-arrow">→</span>
+        </a>
+        <a href="equipment.html" class="explore-link">
+          <span class="explore-link-icon">🏋️</span>
+          <div><strong>Gym Equipment</strong><span>Explore our machines</span></div>
+          <span class="explore-arrow">→</span>
+        </a>
+        <a href="booking.html" class="explore-link">
+          <span class="explore-link-icon">🗓️</span>
+          <div><strong>Book a Class</strong><span>Reserve your spot</span></div>
+          <span class="explore-arrow">→</span>
+        </a>
+        <a href="progress.html" class="explore-link">
+          <span class="explore-link-icon">📈</span>
+          <div><strong>Progress Tracker</strong><span>Track weight, BMI & more</span></div>
+          <span class="explore-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <!-- Top glow line -->
+    <div class="footer-glow-line"></div>
+
+    <div class="container">
+
+      <!-- Main grid -->
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand -->
+        <div class="footer-brand animate-up">
+          <a href="#home" class="logo footer-logo">NOVA<span>GYM</span></a>
+          <p class="footer-tagline">Push beyond your limits. Build the body and life you deserve — with NovaGym by your side every rep of the way.</p>
+          <!-- Social icons -->
+          <div class="footer-socials">
+            <a href="#" class="fsoc-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="fsoc-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="fsoc-btn" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4"/></svg>
+            </a>
+            <a href="#" class="fsoc-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col animate-up delay-1">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Explore Tools -->
+        <div class="footer-col animate-up delay-2">
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="planner.html">Workout Planner</a></li>
+            <li><a href="diet.html">Diet Planner</a></li>
+            <li><a href="exercises.html">Exercise Library</a></li>
+            <li><a href="equipment.html">Gym Equipment</a></li>
+            <li><a href="booking.html">Book a Class</a></li>
+            <li><a href="progress.html">Progress Tracker</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col footer-newsletter animate-up delay-3">
+          <h4 class="footer-col-title">Stay in the Loop</h4>
+          <p class="footer-newsletter-desc">Get workout tips, member offers, and NovaGym news straight to your inbox.</p>
+          <form class="fnl-form" id="newsletterForm" novalidate>
+            <div class="fnl-wrap">
+              <input type="email" id="fnlEmail" class="fnl-input" placeholder="Your email address" />
+              <button type="submit" class="fnl-btn" aria-label="Subscribe">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+            <p class="fnl-err" id="fnlErr"></p>
+            <p class="fnl-success" id="fnlSuccess">🎉 You're subscribed! Welcome to the NovaGym family.</p>
+          </form>
+          <p class="fnl-note">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <span class="red">NovaGym</span>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>·</span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SECTIONS HIDDEN ON HOMEPAGE (moved to separate pages) -->
+  <!-- WORKOUT PLANNER -->
+  <section id="planner" style="display:none" class="planner section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Your Plan</p>
+        <h2>Workout <span class="red">Planner</span></h2>
+        <p class="section-desc">Select your goal and experience level to get a personalised weekly schedule.</p>
+      </div>
+
+      <div class="planner-controls animate-up">
+        <div class="planner-group">
+          <p class="planner-group-label">Goal</p>
+          <div class="planner-pills" id="goalPills">
+            <button class="planner-pill active" data-value="weightloss">&#128293; Weight Loss</button>
+            <button class="planner-pill" data-value="muscle">&#128170; Muscle Gain</button>
+            <button class="planner-pill" data-value="strength">&#127947; Strength</button>
+          </div>
+        </div>
+        <div class="planner-group">
+          <p class="planner-group-label">Experience Level</p>
+          <div class="planner-pills" id="levelPills">
+            <button class="planner-pill active" data-value="beginner">&#127807; Beginner</button>
+            <button class="planner-pill" data-value="intermediate">&#9889; Intermediate</button>
+            <button class="planner-pill" data-value="advanced">&#128305; Advanced</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="planner-schedule" id="plannerSchedule"></div>
+    </div>
+  </section>
+
+  <!-- DIET PLANNER -->
+  <section id="diet" style="display:none" class="diet-planner section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Nutrition</p>
+        <h2>Diet <span class="red">Planner</span></h2>
+        <p class="section-desc">Enter your details to get a personalised daily meal plan with calories and macros.</p>
+      </div>
+
+      <!-- Inputs -->
+      <div class="dp-form glass animate-up">
+        <div class="dp-form-row">
+          <div class="dp-field">
+            <label class="dp-label">Weight</label>
+            <div class="dp-input-wrap">
+              <input type="number" id="dpWeight" class="dp-input" placeholder="e.g. 70" min="30" max="300" />
+              <span class="dp-unit">kg</span>
+            </div>
+          </div>
+          <div class="dp-field">
+            <label class="dp-label">Gender</label>
+            <div class="dp-toggle" id="dpGender">
+              <button class="dp-toggle-btn active" data-value="male">&#9794; Male</button>
+              <button class="dp-toggle-btn" data-value="female">&#9792; Female</button>
+            </div>
+          </div>
+          <div class="dp-field">
+            <label class="dp-label">Goal</label>
+            <div class="dp-toggle" id="dpGoal">
+              <button class="dp-toggle-btn active" data-value="loss">&#128293; Weight Loss</button>
+              <button class="dp-toggle-btn" data-value="maintain">&#9878; Maintain</button>
+              <button class="dp-toggle-btn" data-value="gain">&#128170; Muscle Gain</button>
+            </div>
+          </div>
+          <button class="btn btn-primary dp-generate-btn" id="dpGenerate">Generate Plan</button>
+        </div>
+        <p class="dp-error" id="dpError"></p>
+      </div>
+
+      <!-- Output -->
+      <div class="dp-output" id="dpOutput"></div>
+    </div>
+  </section>
+
+  <!-- EXERCISE LIBRARY -->
+  <section id="exercises" style="display:none" class="ex-lib section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Exercise Library</p>
+        <h2>Learn Every <span class="red">Move</span></h2>
+        <p class="section-desc">Browse exercises by muscle group. Click Demo to watch the movement in action.</p>
+      </div>
+
+      <!-- Category filters -->
+      <div class="ex-filters animate-up">
+        <button class="ex-filter-btn active" data-cat="all">All</button>
+        <button class="ex-filter-btn" data-cat="chest">&#128170; Chest</button>
+        <button class="ex-filter-btn" data-cat="back">&#127947; Back</button>
+        <button class="ex-filter-btn" data-cat="legs">&#129463; Legs</button>
+        <button class="ex-filter-btn" data-cat="arms">&#128170; Arms</button>
+        <button class="ex-filter-btn" data-cat="shoulders">&#127937; Shoulders</button>
+        <button class="ex-filter-btn" data-cat="cardio">&#128293; Cardio</button>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="ex-grid" id="exGrid"></div>
+    </div>
+
+    <!-- Demo Modal -->
+    <div class="ex-modal" id="exModal" role="dialog" aria-modal="true">
+      <div class="ex-modal-backdrop" id="exModalBackdrop"></div>
+      <div class="ex-modal-box">
+        <button class="ex-modal-close" id="exModalClose" aria-label="Close">&times;</button>
+        <div class="ex-modal-visual" id="exModalVisual"></div>
+        <div class="ex-modal-body">
+          <div class="ex-modal-header">
+            <h3 id="exModalTitle"></h3>
+            <span class="ex-modal-diff" id="exModalDiff"></span>
+          </div>
+          <p class="ex-modal-desc" id="exModalDesc"></p>
+          <div class="ex-modal-meta">
+            <div class="ex-modal-meta-item">
+              <span class="ex-modal-meta-lbl">Muscle Targeted</span>
+              <span class="ex-modal-meta-val" id="exModalMuscle"></span>
+            </div>
+            <div class="ex-modal-meta-item">
+              <span class="ex-modal-meta-lbl">Category</span>
+              <span class="ex-modal-meta-val" id="exModalCat"></span>
+            </div>
+            <div class="ex-modal-meta-item">
+              <span class="ex-modal-meta-lbl">Equipment</span>
+              <span class="ex-modal-meta-val" id="exModalEquip"></span>
+            </div>
+          </div>
+          <div class="ex-modal-steps">
+            <p class="ex-modal-steps-title">How To Perform</p>
+            <ol id="exModalSteps"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GYM EQUIPMENT -->
+  <section id="equipment" style="display:none" class="gym-equipment section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Our Facility</p>
+        <h2>Gym <span class="red">Equipment</span></h2>
+        <p class="section-desc">State-of-the-art machines and free weights to power every workout.</p>
+      </div>
+      <div class="eq-grid">
+
+        <div class="eq-card animate-zoom delay-1">
+          <div class="eq-card-img">
+            <span class="eq-emoji">🏃</span>
+            <div class="eq-img-overlay"></div>
+          </div>
+          <div class="eq-card-body">
+            <h3 class="eq-name">Treadmill</h3>
+            <p class="eq-desc">Commercial-grade treadmills with speeds up to 20 km/h, incline up to 15%, and built-in heart rate monitoring. Perfect for warm-ups, steady-state cardio, and interval training.</p>
+            <div class="eq-tags">
+              <span class="eq-tag">Cardio</span>
+              <span class="eq-tag">Fat Burn</span>
+              <span class="eq-tag">Endurance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eq-card animate-zoom delay-2">
+          <div class="eq-card-img">
+            <span class="eq-emoji">🏋️</span>
+            <div class="eq-img-overlay"></div>
+          </div>
+          <div class="eq-card-body">
+            <h3 class="eq-name">Bench Press</h3>
+            <p class="eq-desc">Olympic flat benches with safety spotter arms and adjustable incline/decline positions. Loaded with premium barbells and weight plates for maximum chest and tricep development.</p>
+            <div class="eq-tags">
+              <span class="eq-tag">Chest</span>
+              <span class="eq-tag">Triceps</span>
+              <span class="eq-tag">Strength</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eq-card animate-zoom delay-3">
+          <div class="eq-card-img">
+            <span class="eq-emoji">🔱</span>
+            <div class="eq-img-overlay"></div>
+          </div>
+          <div class="eq-card-body">
+            <h3 class="eq-name">Squat Rack</h3>
+            <p class="eq-desc">Heavy-duty power racks rated to 500 kg with adjustable J-hooks, safety bars, and pull-up attachments. Ideal for squats, deadlifts, overhead press, and rack pulls.</p>
+            <div class="eq-tags">
+              <span class="eq-tag">Legs</span>
+              <span class="eq-tag">Full Body</span>
+              <span class="eq-tag">Power</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eq-card animate-zoom delay-1">
+          <div class="eq-card-img">
+            <span class="eq-emoji">💪</span>
+            <div class="eq-img-overlay"></div>
+          </div>
+          <div class="eq-card-body">
+            <h3 class="eq-name">Dumbbells</h3>
+            <p class="eq-desc">A complete rubber hex dumbbell set ranging from 2 kg to 60 kg. Stored on tiered racks for easy access, enabling isolation exercises, compound movements, and functional training.</p>
+            <div class="eq-tags">
+              <span class="eq-tag">Free Weights</span>
+              <span class="eq-tag">Isolation</span>
+              <span class="eq-tag">Versatile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eq-card animate-zoom delay-2">
+          <div class="eq-card-img">
+            <span class="eq-emoji">🔀</span>
+            <div class="eq-img-overlay"></div>
+          </div>
+          <div class="eq-card-body">
+            <h3 class="eq-name">Cable Machine</h3>
+            <p class="eq-desc">Dual-stack functional trainers with 360° cable adjustment and a full set of attachments — ropes, bars, handles, and ankle straps. Unmatched for isolation and cable-based compound work.</p>
+            <div class="eq-tags">
+              <span class="eq-tag">Cable</span>
+              <span class="eq-tag">Isolation</span>
+              <span class="eq-tag">Full Body</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eq-card animate-zoom delay-3">
+          <div class="eq-card-img">
+            <span class="eq-emoji">🚴</span>
+            <div class="eq-img-overlay"></div>
+          </div>
+          <div class="eq-card-body">
+            <h3 class="eq-name">Exercise Bike</h3>
+            <p class="eq-desc">Studio-quality upright and recumbent bikes with magnetic resistance, digital performance tracking, and ergonomic seating. Low-impact cardio that's easy on the joints and high on results.</p>
+            <div class="eq-tags">
+              <span class="eq-tag">Cardio</span>
+              <span class="eq-tag">Low Impact</span>
+              <span class="eq-tag">Recovery</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS BOOKING -->
+  <section id="booking" style="display:none" class="booking section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Reserve Your Spot</p>
+        <h2>Book a <span class="red">Class</span></h2>
+        <p class="section-desc">Choose a class, pick your date and time, and secure your spot in seconds.</p>
+      </div>
+
+      <div class="bk-layout">
+
+        <!-- LEFT: class cards + date + time -->
+        <div class="bk-left">
+
+          <!-- Step 1: Choose class -->
+          <div class="bk-step animate-left">
+            <p class="bk-step-label"><span class="bk-step-num">1</span> Choose a Class</p>
+            <div class="bk-classes" id="bkClasses">
+              <button class="bk-class-card active" data-class="HIIT Blast" data-trainer="Coach Marcus" data-duration="45 min" data-level="Advanced" data-emoji="🔥">
+                <span class="bk-class-emoji">🔥</span>
+                <div class="bk-class-info">
+                  <p class="bk-class-name">HIIT Blast</p>
+                  <p class="bk-class-meta">Coach Marcus &bull; 45 min &bull; Advanced</p>
+                </div>
+                <span class="bk-class-check">✓</span>
+              </button>
+              <button class="bk-class-card" data-class="Yoga Flow" data-trainer="Coach Priya" data-duration="60 min" data-level="All Levels" data-emoji="🧘">
+                <span class="bk-class-emoji">🧘</span>
+                <div class="bk-class-info">
+                  <p class="bk-class-name">Yoga Flow</p>
+                  <p class="bk-class-meta">Coach Priya &bull; 60 min &bull; All Levels</p>
+                </div>
+                <span class="bk-class-check">✓</span>
+              </button>
+              <button class="bk-class-card" data-class="Strength & Power" data-trainer="Coach Jake" data-duration="50 min" data-level="Intermediate" data-emoji="🏋️">
+                <span class="bk-class-emoji">🏋️</span>
+                <div class="bk-class-info">
+                  <p class="bk-class-name">Strength & Power</p>
+                  <p class="bk-class-meta">Coach Jake &bull; 50 min &bull; Intermediate</p>
+                </div>
+                <span class="bk-class-check">✓</span>
+              </button>
+              <button class="bk-class-card" data-class="Spin Cycle" data-trainer="Coach Leila" data-duration="45 min" data-level="All Levels" data-emoji="🚴">
+                <span class="bk-class-emoji">🚴</span>
+                <div class="bk-class-info">
+                  <p class="bk-class-name">Spin Cycle</p>
+                  <p class="bk-class-meta">Coach Leila &bull; 45 min &bull; All Levels</p>
+                </div>
+                <span class="bk-class-check">✓</span>
+              </button>
+              <button class="bk-class-card" data-class="Boxing Fundamentals" data-trainer="Coach Ray" data-duration="55 min" data-level="Beginner" data-emoji="🥊">
+                <span class="bk-class-emoji">🥊</span>
+                <div class="bk-class-info">
+                  <p class="bk-class-name">Boxing Fundamentals</p>
+                  <p class="bk-class-meta">Coach Ray &bull; 55 min &bull; Beginner</p>
+                </div>
+                <span class="bk-class-check">✓</span>
+              </button>
+              <button class="bk-class-card" data-class="CrossFit WOD" data-trainer="Coach Sam" data-duration="60 min" data-level="Advanced" data-emoji="⚡">
+                <span class="bk-class-emoji">⚡</span>
+                <div class="bk-class-info">
+                  <p class="bk-class-name">CrossFit WOD</p>
+                  <p class="bk-class-meta">Coach Sam &bull; 60 min &bull; Advanced</p>
+                </div>
+                <span class="bk-class-check">✓</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Pick date -->
+          <div class="bk-step animate-left" style="transition-delay:0.1s">
+            <p class="bk-step-label"><span class="bk-step-num">2</span> Select a Date</p>
+            <div class="bk-calendar" id="bkCalendar">
+              <div class="bk-cal-header">
+                <button class="bk-cal-nav" id="bkCalPrev">&#8592;</button>
+                <span class="bk-cal-month" id="bkCalMonth"></span>
+                <button class="bk-cal-nav" id="bkCalNext">&#8594;</button>
+              </div>
+              <div class="bk-cal-days-header">
+                <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+              </div>
+              <div class="bk-cal-grid" id="bkCalGrid"></div>
+            </div>
+          </div>
+
+          <!-- Step 3: Pick time -->
+          <div class="bk-step animate-left" style="transition-delay:0.2s">
+            <p class="bk-step-label"><span class="bk-step-num">3</span> Select a Time</p>
+            <div class="bk-times" id="bkTimes"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: booking form + confirmation -->
+        <div class="bk-right animate-right">
+
+          <!-- Summary card -->
+          <div class="bk-summary glass" id="bkSummary">
+            <p class="bk-summary-title">Your Selection</p>
+            <div class="bk-summary-row"><span>Class</span><strong id="bkSumClass">HIIT Blast</strong></div>
+            <div class="bk-summary-row"><span>Trainer</span><strong id="bkSumTrainer">Coach Marcus</strong></div>
+            <div class="bk-summary-row"><span>Duration</span><strong id="bkSumDuration">45 min</strong></div>
+            <div class="bk-summary-row"><span>Date</span><strong id="bkSumDate">—</strong></div>
+            <div class="bk-summary-row"><span>Time</span><strong id="bkSumTime">—</strong></div>
+          </div>
+
+          <!-- Form -->
+          <div class="bk-form-wrap glass" id="bkFormWrap">
+            <h3 class="bk-form-title">Your <span class="red">Details</span></h3>
+            <form id="bkForm" class="bk-form" novalidate>
+              <div class="bk-field">
+                <input type="text" id="bkName" class="bk-input" placeholder=" " />
+                <label for="bkName" class="bk-label">Full Name</label>
+                <span class="bk-err" id="bkErrName"></span>
+              </div>
+              <div class="bk-field">
+                <input type="email" id="bkEmail" class="bk-input" placeholder=" " />
+                <label for="bkEmail" class="bk-label">Email Address</label>
+                <span class="bk-err" id="bkErrEmail"></span>
+              </div>
+              <div class="bk-field">
+                <input type="tel" id="bkPhone" class="bk-input" placeholder=" " />
+                <label for="bkPhone" class="bk-label">Phone (optional)</label>
+              </div>
+              <span class="bk-err bk-err-global" id="bkErrGlobal"></span>
+              <button type="submit" class="btn btn-primary full-width bk-submit-btn" id="bkSubmit">
+                <span id="bkSubmitText">Confirm Booking</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Confirmation panel (hidden until booked) -->
+          <div class="bk-confirm" id="bkConfirm">
+            <div class="bk-confirm-icon">✅</div>
+            <h3 class="bk-confirm-title">Booking Confirmed!</h3>
+            <p class="bk-confirm-sub">See you on the gym floor. A confirmation has been sent to your email.</p>
+            <div class="bk-confirm-details" id="bkConfirmDetails"></div>
+            <button class="btn btn-outline bk-book-another" id="bkBookAnother">Book Another Class</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS TRACKER -->
+  <section id="progress" style="display:none" class="progress-tracker section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <p class="section-label">Your Journey</p>
+        <h2>Progress <span class="red">Tracker</span></h2>
+        <p class="section-desc">Log your stats and visualise your fitness journey over time.</p>
+      </div>
+
+      <!-- Metric Cards Row -->
+      <div class="pt-metrics">
+
+        <!-- Weight -->
+        <div class="pt-metric-card glass animate-zoom delay-1">
+          <div class="pt-metric-header">
+            <div class="pt-metric-icon" style="background:rgba(100,181,246,0.15);border-color:rgba(100,181,246,0.3)">⚖️</div>
+            <div>
+              <p class="pt-metric-label">Weight</p>
+              <p class="pt-metric-latest" id="ptWeightLatest">— kg</p>
+            </div>
+            <span class="pt-metric-delta" id="ptWeightDelta"></span>
+          </div>
+          <div class="pt-log-row">
+            <input type="number" id="ptWeightInput" class="pt-input" placeholder="e.g. 75" min="20" max="300" step="0.1" />
+            <span class="pt-input-unit">kg</span>
+            <button class="pt-log-btn" data-metric="weight">Log</button>
+          </div>
+          <canvas id="chartWeight" class="pt-chart" height="110"></canvas>
+        </div>
+
+        <!-- BMI -->
+        <div class="pt-metric-card glass animate-zoom delay-2">
+          <div class="pt-metric-header">
+            <div class="pt-metric-icon" style="background:rgba(255,183,77,0.15);border-color:rgba(255,183,77,0.3)">📊</div>
+            <div>
+              <p class="pt-metric-label">BMI</p>
+              <p class="pt-metric-latest" id="ptBmiLatest">—</p>
+            </div>
+            <span class="pt-metric-delta" id="ptBmiDelta"></span>
+          </div>
+          <div class="pt-log-row">
+            <input type="number" id="ptBmiInput" class="pt-input" placeholder="e.g. 22.5" min="10" max="60" step="0.1" />
+            <span class="pt-input-unit">BMI</span>
+            <button class="pt-log-btn" data-metric="bmi">Log</button>
+          </div>
+          <canvas id="chartBmi" class="pt-chart" height="110"></canvas>
+        </div>
+
+        <!-- Calories -->
+        <div class="pt-metric-card glass animate-zoom delay-3">
+          <div class="pt-metric-header">
+            <div class="pt-metric-icon" style="background:rgba(230,48,48,0.12);border-color:rgba(230,48,48,0.3)">🔥</div>
+            <div>
+              <p class="pt-metric-label">Calories</p>
+              <p class="pt-metric-latest" id="ptCalLatest">— kcal</p>
+            </div>
+            <span class="pt-metric-delta" id="ptCalDelta"></span>
+          </div>
+          <div class="pt-log-row">
+            <input type="number" id="ptCalInput" class="pt-input" placeholder="e.g. 2100" min="500" max="6000" step="10" />
+            <span class="pt-input-unit">kcal</span>
+            <button class="pt-log-btn" data-metric="calories">Log</button>
+          </div>
+          <canvas id="chartCalories" class="pt-chart" height="110"></canvas>
+        </div>
+
+        <!-- Workout Days -->
+        <div class="pt-metric-card glass animate-zoom delay-1">
+          <div class="pt-metric-header">
+            <div class="pt-metric-icon" style="background:rgba(102,187,106,0.15);border-color:rgba(102,187,106,0.3)">🏋️</div>
+            <div>
+              <p class="pt-metric-label">Workout Days</p>
+              <p class="pt-metric-latest" id="ptWdLatest">— days</p>
+            </div>
+            <span class="pt-metric-delta" id="ptWdDelta"></span>
+          </div>
+          <div class="pt-log-row">
+            <input type="number" id="ptWdInput" class="pt-input" placeholder="e.g. 4" min="0" max="7" step="1" />
+            <span class="pt-input-unit">/ wk</span>
+            <button class="pt-log-btn" data-metric="workoutdays">Log</button>
+          </div>
+          <canvas id="chartWorkoutDays" class="pt-chart" height="110"></canvas>
+        </div>
+
+      </div>
+
+      <!-- Summary Overview Chart -->
+      <div class="pt-overview glass animate-up">
+        <div class="pt-overview-header">
+          <p class="pt-overview-title">📈 Weekly Overview</p>
+          <div class="pt-overview-tabs" id="ptOverviewTabs">
+            <button class="pt-tab active" data-metric="weight">Weight</button>
+            <button class="pt-tab" data-metric="bmi">BMI</button>
+            <button class="pt-tab" data-metric="calories">Calories</button>
+            <button class="pt-tab" data-metric="workoutdays">Workout Days</button>
+          </div>
+          <button class="pt-clear-btn" id="ptClearAll">🗑 Clear All</button>
+        </div>
+        <canvas id="chartOverview" height="80"></canvas>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-wrap" id="chatbotWrap">
+    <div class="chatbot-popup" id="chatbotPopup">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar">💪</div>
+          <div>
+            <p class="chatbot-name">Nova</p>
+            <p class="chatbot-status"><span class="chatbot-online"></span>Online</p>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages"></div>
+      <div class="chatbot-suggestions" id="chatbotSuggestions"></div>
+      <div class="chatbot-input-row">
+        <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Ask me anything..." autocomplete="off" />
+        <button class="chatbot-send" id="chatbotSend" aria-label="Send">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+    <button class="chatbot-fab" id="chatbotFab" aria-label="Open chat">
+      <svg class="chatbot-fab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <svg class="chatbot-fab-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <span class="chatbot-fab-badge" id="chatbotBadge">1</span>
+    </button>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
