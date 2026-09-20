@@ -1228,6 +1228,9 @@ h2 {
   position: relative;
   z-index: 1;
 }
+
+/* Info cards */
+.contact-info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
